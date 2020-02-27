@@ -111,7 +111,7 @@ const Example = () => {
   return selectedNodeId && (
     <div>
       <h2>Node selected: {selectedNodeId}</h2>
-      <a onClick={() => actions.hide(selectedNodeId)}>Hide</a>
+      <a onClick={() => actions.setHidden(selectedNodeId, true)}>Hide</a>
       <a onClick={() => actions.delete(selectedNodeId)}>Delete</a>
     </div>
   )
